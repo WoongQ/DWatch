@@ -4,6 +4,8 @@ A 3D mechanical watch viewer in the browser. Rotate the watch with the mouse, sw
 
 ![DWATCH](https://img.shields.io/badge/Three.js-3D%20watch-000?style=flat&logo=javascript)
 
+**Live demo:** [https://woongq.github.io/DWatch/](https://woongq.github.io/DWatch/) — open in a browser to view and rotate the watch, toggle real/demo time, and show the movement.
+
 ## Features
 
 - **3D watch face** — Round case, polished bezel, fluted crown, and metal bracelet (multi-row links).
