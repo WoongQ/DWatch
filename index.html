@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DWATCH — 3D</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+      "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+    }
+  }
+  </script>
+</head>
+<body>
+  <div class="page">
+    <header class="header">
+      <h1>DWATCH</h1>
+      <p class="subtitle">3D Mechanical Watch · Drag to Rotate</p>
+    </header>
+
+    <main class="main">
+      <div class="watch-container">
+        <canvas id="watchCanvas"></canvas>
+        <div class="controls">
+          <label class="toggle">
+            <input type="checkbox" id="skeleton" />
+            <span class="toggle-label">Show Movement</span>
+          </label>
+          <label class="toggle">
+            <input type="checkbox" id="realTime" checked />
+            <span class="toggle-label">Real Time</span>
+          </label>
+          <div class="time-display" id="timeDisplay">00:00:00</div>
+        </div>
+      </div>
+
+      <aside class="legend">
+        <h2>Movement</h2>
+        <ul>
+          <li><span class="dot plate"></span> Main Plate</li>
+          <li><span class="dot bridge"></span> Bridge with Anglage</li>
+          <li><span class="dot jewel"></span> Ruby Jewel Bearings</li>
+          <li><span class="dot center-wheel"></span> Center Wheel</li>
+          <li><span class="dot fourth-wheel"></span> Fourth Wheel</li>
+          <li><span class="dot escape-wheel"></span> Escape Wheel</li>
+          <li><span class="dot pallet"></span> Pallet Fork</li>
+          <li><span class="dot balance"></span> Balance and Hairspring</li>
+        </ul>
+      </aside>
+    </main>
+  </div>
+  <script type="module" src="watch3d.js"></script>
+</body>
+</html>
